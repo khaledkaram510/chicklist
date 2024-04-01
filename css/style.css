@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --bockground-color: #142c35;
+  --font-color: #efefef;
+}
+@media (min-width:768px){
+  .container{
+    width:750px;
+  }
+}
+
+/* medium */
+@media (min-width:992px){
+  .container{
+    width:970px;
+  }
+}
+
+/* large */
+@media (min-width:1200px){
+  .container{
+    width:1170px;
+  }
+}
+
+html{
+  background-color: var(--bockground-color);
+}
+body{
+  font-family:"Work sans",arial,sans-serif;
+}
+
+@font-face {
+  font-family: "Work sans";
+  src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+
+.container{
+  /* width: 400px; */
+  /* padding: 20px; */
+  padding-top: 20px;
+  padding-left:20px;
+  padding-right:20px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.bar{
+  display: flex;
+  justify-content: space-between;
+}
+.text{
+  width: 77%;
+  height: 35px;
+  background-color: var(--bockground-color);
+  border: 2px solid #06d59f;
+  caret-color: #06d59f;
+  /* caret-shape: block; */
+  border-radius: 4px;
+  outline: none;
+  color: var(--font-color);
+}
+
+.submit{
+  width: 22%;
+  height: 35px;
+  color: var(--font-color);
+  font-weight: bold;
+  background-color: #06d59f;
+  border: 2px solid #06d59f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tasks{
+  padding: 10px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  border: 2px solid #06d59f;
+  border-radius: 4px;
+  width: 100%;
+  /* background-color: #17333d; */
+}
+body .tasks div:nth-child(1){
+  margin-top: 10px;
+}
+/* .checked{
+  padding: 10px;
+  width: 384px;
+} */
+.con-helth{
+  display: flex;
+  justify-content: center;
+}
+.helth{
+  margin-top: 20px;
+  width: 250px;
+  height: 15px;
+  border: 2px solid #06d59f;
+  border-radius: 6px;
+  position: relative;
+}
+.helth div {
+  height: 100%;
+  background-color: #06d59f;
+  width: 0%;
+  border-radius: 4px;
+}
+.percent{
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 3px;
+  color: var(--font-color);
+  /*margin-left: 2px; */
+  /* position: absolute;
+  right: -41px;
+  top: -3px; */
+}
+.task{
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background-color: var(--bockground-color);
+  border: 2px solid #06d59f;
+  /* width: 94.5%; */
+  position: relative;
+  border-radius: 4px;
+  color: var(--font-color);
+}
+
+
+.task .fa-square-check{
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  color: #06d59f;
+  /* display: none; */
+}
+.task .fa-square{
+  position: absolute;
+  left: -20px;
+  top: 7px;
+  color: #06d59f;
+  display: block;
+  cursor: pointer;
+}
+.task .fa-trash-can{
+  position: absolute;
+  right: 7px;
+  /* top: 7px; */
+  color: #06d59f;
+  cursor: pointer;
+}
+
