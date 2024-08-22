@@ -54,6 +54,7 @@ body{
   justify-content: space-between;
 }
 .text{
+  padding: 10px;
   width: 77%;
   height: 35px;
   background-color: var(--bockground-color);
@@ -155,5 +156,84 @@ body .tasks div:nth-child(1){
   /* top: 7px; */
   color: #06d59f;
   cursor: pointer;
+}
+
+/* .header::after{
+  content: "";
+  display: block;
+  clear: both;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #06d59f;
+  animation-name: name;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+@keyframes name{
+  0%{
+    content: "T|";
+  }
+  12%{
+    content: "To|";
+  }
+  24%{
+    content: "To D|";
+  }
+  36%{
+    content: "To Do|";
+  }
+  48%{
+    content: "To Do L|";
+  }
+  60%{
+    content: "To Do Li|";
+  }
+  72%{
+    content: "To Do Lis|";
+  }
+  84%{
+    content: "To Do List|";
+  }
+  100%{
+    content: "To Do List|";
+  } 
+} */
+
+
+.header::after{
+  content: "To Do List";
+  display: block;
+  clear: both;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #06d59f;
+  width: fit-content;
+  height: 50px;
+  border-right: 4px solid #06d59f;
+  animation: typing 2s infinite, blink-caret .7s step-end infinite;
+  animation-direction: alternate; 
+}
+@keyframes typing {
+  0% { content: "T"; }
+  10% { content: "T" }
+  20% { content: "To" }
+  30% { content: "To " }
+  40% { content: "To D" }
+  50% { content: "To Do" }
+  60% { content: "To Do " }
+  70% { content: "To Do L" }
+  80% { content: "To Do Li" }
+  90% { content: "To Do Lis" }
+  100% { content: "To Do List" }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #114638 }
 }
 
